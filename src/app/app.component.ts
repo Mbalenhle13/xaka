@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'xaka-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
