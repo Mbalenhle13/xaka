@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
       footer works!
     </p>
   `,
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
 
