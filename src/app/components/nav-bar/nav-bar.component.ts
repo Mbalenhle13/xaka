@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-nav-bar',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-
+navigationUrls = [
+  { title: 'Home', route: 'home' },
+  { title: 'About', route: 'about' },
+  { title: 'Services', route: 'services' },
+  { title: 'Contact Us', route: 'contact-us' },
+]
 }
