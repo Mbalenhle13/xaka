@@ -5,12 +5,14 @@ import appRoutes from "./app-routes";
 import {RouterModule} from "@angular/router";
 import {CommonModule} from "@angular/common";
 import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
+import { HomeComponent } from "./pages/home/home.component";
 import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +23,8 @@ import { FormsModule, ReactiveFormsModule} from "@angular/forms";
   ],
   exports: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    HomeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
