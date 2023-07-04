@@ -7,12 +7,14 @@ import {CommonModule} from "@angular/common";
 import {NavBarComponent} from "./components/nav-bar/nav-bar.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { FormsModule, ReactiveFormsModule} from "@angular/forms";
   exports: [
     AppComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

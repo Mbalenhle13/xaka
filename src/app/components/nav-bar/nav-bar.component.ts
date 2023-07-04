@@ -10,6 +10,6 @@ navigationUrls = [
   { title: 'Home', route: 'home' },
   { title: 'About', route: 'about' },
   { title: 'Services', route: 'services' },
-  { title: 'Contact Us', route: 'contact-us' },
+  { title: 'Blog', route: 'blog' },
 ]
 }

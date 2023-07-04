@@ -31,9 +31,7 @@
         </div>
         <div class="hidden sm:ml-6 sm:block justify-center">
           <div class="flex space-x-4">
-<!--            <ng-template *ngFor="let nav of navigationUrls">-->
-              <a *ngFor="let nav of navigationUrls" routerLink="nav.route" class="line-under text-stone-700 px-3 py-2 text-lg font-normal" aria-current="page">{{nav.title}}</a>
-<!--            </ng-template>-->
+              <a *ngFor="let nav of navigationUrls" routerLink="{{nav.route}}" class="line-under text-stone-700 px-3 py-2 text-lg font-normal" aria-current="page">{{nav.title}}</a>
           </div>
         </div>
       </div>
