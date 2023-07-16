@@ -1,3 +1,4 @@
-.img:hover {
-  @include flip();
+img:hover {
+  animation: flip;
+  animation-duration: 3s;
 }
