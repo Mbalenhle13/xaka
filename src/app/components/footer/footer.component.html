@@ -27,7 +27,7 @@
         <div class="sm:col-span-2">
           <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
           <textarea id="message" formControlName="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
-          <div *ngIf="contactForm.controls['message'].value.length > 300 && contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+          <div *ngIf="contactForm.controls['message'].value.length > 300 && contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-400 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-500" role="alert">
              Maximum 300 characters.
           </div>
           <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
@@ -39,20 +39,20 @@
     </div>
   </section>
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="home" class="hover:underline">Xaka Transport and Logistics™</a>. All Rights Reserved.
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/home" class="hover:underline">Xaka Transport and Logistics™</a>. All Rights Reserved.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm  font-normal text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
         <a href="" class="mr-4 hover:underline md:mr-6">Home</a>
       </li>
       <li>
-        <a href="about" class="mr-4 hover:underline md:mr-6 ">About</a>
+        <a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a>
       </li>
       <li>
-        <a href="services" class="mr-4 hover:underline md:mr-6">Services</a>
+        <a href="/services" class="mr-4 hover:underline md:mr-6">Services</a>
       </li>
       <li>
-        <a href="blog" class="mr-4 hover:underline md:mr-6">Blog</a>
+        <a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>
       </li>
     </ul>
   </div>

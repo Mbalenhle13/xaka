@@ -9,8 +9,6 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class FooterComponent {
 
-  // public invalid: boolean | null = false;
-
   contactForm: FormGroup = new FormGroup({
     name: new FormControl('', {
       validators: [Validators.required, Validators.maxLength(50)],
@@ -36,7 +34,7 @@ export class FooterComponent {
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
       }, (error) => {
-        console.log(error.text);
+        console.error(error.text);
       });
   }
 
