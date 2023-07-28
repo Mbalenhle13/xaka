@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    colors: {
+      baseBlue: '#091242',
+      baseRed: '#FC3C3C',
+      baseGray: '#F4F4F4'
+    },
     extend: {
     },
     divideWidth: {
