@@ -58,3 +58,70 @@
     </ul>
   </div>
 </footer>
+
+<footer class="bg-baseBlue px-80 py-36 grid grid-rows-2 font-sans text-white">
+  <div class="grid grid-cols-2 gap-20">
+    <div>
+          <div class="bg-white/10 w-fit px-2.5 py-1 border-l-baseRed border-l-4 font-normal text-sm mb-4">Contact
+          </div>
+      <p class="text-4xl mb-1">Get in touch with us</p>
+      <p class="text-base font-normal mb-8">Fill out our contact form to connect with our dedicated team and discover personalized solutions for your business needs.</p>
+      <div class="grid grid-rows-3 gap-y-7 text-sm font-medium	leading-5">
+        <div class="flex items-center gap-x-4 whitespace-nowrap"><img src="assets/icons/clock.svg" alt="clock"/> Mon - Sat 09:00 - 18:00
+          <br>Sunday Closed
+        </div>
+        <div class="flex items-center gap-x-4 whitespace-nowrap"><img src="assets/icons/email.svg" alt="email"/> Email
+          <br>xakaservices@outlook.com
+        </div>
+        <div class="flex items-center gap-x-4 whitespace-nowrap"><img src="assets/icons/call.svg" alt="call"/> Call Us
+          <br>+27 68 365 1420
+        </div>
+      </div>
+    </div>
+    <div>
+      <form [formGroup]="contactForm" action="#" class="space-y-8">
+        <div class="flex flex-col lg:flex-row gap-7 mb-4">
+          <div class="flex-1">
+            <label for="from_name" class="block mb-2 text-l font-normal text-white">Full Name*</label>
+            <input type="text" id="from_name" formControlName="name" class="bg-baseBlue border-2 text-white text-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="John Doe" required>
+            <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+              This field is required.
+            </div>
+          </div>
+          <div class="flex-1">
+            <label for="email" class="block mb-2 text-l font-normal text-white">Email Address*</label>
+            <input type="email" id="email" formControlName="email" class="bg-baseBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="email@domain.com" required>
+            <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+              This field is required.
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-7 mb-4">
+          <div class="flex-1">
+          <label for="number" class="block mb-2 text-l font-normal text-white">Phone Number*</label>
+          <input type="text" id="number" class="bg-baseBlue border-2 text-white text-xl block w-full p-2.5 dark:placeholder-gray-40" placeholder="Let us know how we can help you" required>
+        </div>
+          <div class="flex-1">
+          <label for="subject" class="block mb-2 text-l font-normal text-white">Subject</label>
+          <input type="text" id="subject" class="bg-baseBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="Let us know how we can help you" required>
+        </div>
+        </div>
+        <div class="sm:col-span-2 mb-16">
+          <label for="message" class="block mb-2 text-l font-normal text-white">Your message*</label>
+          <textarea id="message" formControlName="message" rows="6" class="bg-baseBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="Leave a message..."></textarea>
+          <div *ngIf="contactForm.controls['message'].value.length > 300 && contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-400 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-500" role="alert">
+            Maximum 300 characters.
+          </div>
+          <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            This field is required.
+          </div>
+        </div>
+        <app-button class="mt-8" [label]="'Submit Messsage'" (click)="sendEmail()"></app-button>
+<!--        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-gray-900 rounded-lg bg-slate-100 sm:w-fit transition ease-in-out delay-150 hover:bg-slate-200 hover:-translate-y-1 hover:scale-105 duration-300" (click)="sendEmail()">Send message</button>-->
+      </form>
+    </div>
+  </div>
+  <div class="bg-purple-300">
+    Placeholder for brands
+  </div>
+</footer>
