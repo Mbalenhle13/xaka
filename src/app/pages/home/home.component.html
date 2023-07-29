@@ -1,100 +1,134 @@
-<div
-  class="relative isolate overflow-hidden  flex justify-center m-4 bg-gray-900 bg-[url('/assets/deep_blue_truck.jpg')] bg-cover bg-fixed bg-bottom">
-  <div class="lg:max-w-7xl px-6 lg:px-8 py-24 sm:py-36 bg-cyan-900/25 backdrop-brightness-50">
-    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl ">Welcome to Xaka Transport & Logistics</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-300">Your premium destination for comprehensive transportation and
-      logistics solutions. With an unwavering commitment to customer satisfaction and operational efficiency, we are
-      dedicated to providing you with top-notch service and optimal outcomes. </p>
+<section class="top-0 -mt-88">
 
-    <p class="mt-6 text-lg leading-8 text-gray-300">Our seasoned team of experts is ready to deliver the highest
-      quality of service and tailor-made solutions to
-      meet all your transportation and logistics needs. We specialize in a wide range of services, including
-      transportation, construction, and outdoor cleaning. </p>
+  <div>
+    <img class="w-full" src='assets/home-red-truck.png' alt="'truck'"/>
+    <div class="absolute top-96 left-40 px-4 py-3 w-3/5 font-sans text-white">
+      <div class="bg-tagBlue w-fit px-2.5 py-1 border-l-baseRed border-l-4 font-normal text-sm mb-4">Logistics & Supply
+        Chain Solutions
+      </div>
+      <h2 class="font-bold text-6xl leading-tight">Discover limitless possibilities to any destination in the
+        World.</h2>
+      <p class="mt-6 text-base font-medium">Your premium destination for comprehensive transportation and
+        logistics solutions. With an unwavering commitment to customer satisfaction and operational efficiency, we are
+        dedicated to providing you with top-notch service and optimal outcomes. </p>
+      <p class="mt-6 text-base font-medium">Our seasoned team of experts is ready to deliver the highest
+        quality of service and tailor-made solutions to
+        meet all your transportation and logistics needs. We specialize in a wide range of services, including
+        transportation, construction, and outdoor cleaning. </p>
 
-    <p class="mt-6 text-lg leading-8 text-gray-300">Stay informed and connected with our daily news blog, "The 24/7hr
-      Daily Beam IT Up News," exclusively
-      available on our website. This unique platform offers a diverse range of perspectives from across the Transport
-      & Logistics industry. Prepare to be captivated as we bring you the latest insights, trends, and innovations that
-      shape our dynamic field. This is an opportunity you won't want to miss!</p>
+      <p class="mt-6 text-base font-medium mb-6">Stay informed and connected with our daily news blog, "The 24/7hr
+        Daily Beam IT Up News," exclusively
+        available on our website. This unique platform offers a diverse range of perspectives from across the Transport
+        & Logistics industry. Prepare to be captivated as we bring you the latest insights, trends, and innovations that
+        shape our dynamic field. This is an opportunity you won't want to miss!</p>
+      <app-button [label]="'Explore More'"  (click)="router.navigate(['/services'])"></app-button>
+    </div>
   </div>
-</div>
+</section>
 
-<div class="container flex justify-center mx-auto pt-16">
-  <div class="px-16 mb-16">
-    <h1 class="text-5xl text-gray-800 text-center pb-6 mx-auto">Our Team</h1>
-    <p class="text-gray-500 text-lg text-center font-normal pb-3">Our success is fueled by our exceptional team of
-      diverse and talented professionals. With expertise in logistics and information technology we thrive on
-      collaboration, innovation, and staying ahead of industry trends. Our team's unwavering commitment to excellence,
-      combined with a client-centric approach, enables us to deliver cutting-edge solutions and exceptional value. We
-      foster a supportive and inclusive work environment, empowering each team member to shine in their respective
-      roles. </p>
+<main class="font-sans">
+  <div class="flex justify-center mb-4">
+    <p class="w-fit bg-tagGray  px-2.5 py-1 border-l-baseRed border-l-4 font-normal text-sm mb-4 mt-32">The transporters</p>
   </div>
-</div>
-<div class="w-full px-10 pt-10">
-  <div class="container mx-auto">
-    <div
-      class="lg:flex md:flex sm:flex items-center xl:justify-center flex-wrap md:justify-around sm:justify-around lg:justify-around">
-      <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 mr-16 sm:mb-24 xl:max-w-sm lg:w-2/5">
-        <div class="rounded overflow-hidden shadow-md bg-white">
-          <div class="absolute -mt-20 w-full flex justify-center">
-            <div class="h-32 w-32">
-              <img src="assets/profile.png" alt=""
-                   class="rounded-full object-cover h-full w-full shadow-md"/>
-            </div>
+  <div class="flex justify-center mb-10">
+    <div class="px-56">
+      <h1 class="text-3xl text-textPrimary font-semibold text-center mb-6">Our Team</h1>
+      <p class="text-textSecondary text-base text-center font-medium">Our success is fueled by our exceptional team of
+        diverse and talented professionals. With expertise in logistics and information technology we thrive on
+        collaboration, innovation, and staying ahead of industry trends. Our team's unwavering commitment to excellence,
+        combined with a client-centric approach, enables us to deliver cutting-edge solutions and exceptional value. We
+        foster a supportive and inclusive work environment, empowering each team member to shine in their respective
+        roles. </p>
+    </div>
+  </div>
+  <div class="grid grid-rows-2 gap-y-40 bg-[url('assets/map.svg')] bg-cover bg-fixed pt-12">
+    <div class="grid grid-cols-2 gap-x-4">
+      <div class="flex justify-end items-end">
+        <div class="relative">
+          <div class="absolute left-36 top-70 w-44 py-5 px-4 bg-gradient-to-t from-baseRed via-red50 to-red25 grid grid-cols-3 gap-8 items-center">
+            <a href="mailto:ngoepe600@gmail.com">
+              <img class="cursor-pointer hover:animate-bounce transition ease-in-out delay-300" src="assets/icons/email-dark.svg" alt="'email dark'"/>
+            </a>
+            <a href="https://www.linkedin.com/in/koketso-ngoepe-a67bb9211/">
+              <img class="cursor-pointer hover:animate-bounce transition ease-in-out delay-300" src="assets/icons/linkedin-dark.svg" alt="'linkedin dark'"/>
+            </a>
+            <a href="https://www.instagram.com/kpeace_ngoepe/">
+              <img class="cursor-pointer hover:animate-bounce transition ease-in-out delay-300" src="assets/icons/instagram-dark.svg" alt="'instagram'"/>
+            </a>
           </div>
-          <div class="px-6 mt-16">
-            <div class="font-bold text-3xl text-center pb-1">Koketso Ngoepe</div>
-            <p class="text-gray-800 text-sm text-center">Director & Founder</p>
+          <img class="w-80" src="assets/koketso-profile.png" alt="'profile'"/>
+          <div class="bg-textPrimary text-white h-96 py-5 px-9 pt-9">
+            <p class="text-xl font-medium">Koketso Ngoepe</p>
+            <p class="text-base font-light">Director, <br> Founder</p>
             <hr class="mt-6 mb-2 h-0.5 bg-cyan-950/30">
-            <p class="text-center text-gray-600 text-base pt-3 font-normal italic">"The secret to successful logistics
-              is to keep things moving."</p>
-            <div class="w-full flex justify-center pt-12 pb-5">
-              <a href="mailto:xakaservices7@gmail.com" class="mx-3">
-                <div>
-                  <img class="h-7 w-7" src="assets/email.svg" alt=""/>
-                </div>
-              </a>
-              <a href="https://www.linkedin.com/in/koketso-ngoepe-a67bb9211/" class="mx-3">
-                <div>
-                  <img class="h-7 w-7" src="assets/linkedin.svg" alt=""/>
-                </div>
-              </a>
-            </div>
+            <p class="text-center text-base pt-3 font-normal italic whitespace-break-spaces">"The secret to successful logistics
+              <br>is to keep things moving." </p>
           </div>
         </div>
       </div>
-      <div class="xl:w-1/3 sm:w-3/4 md:w-2/5 relative mt-16 mb-32 sm:mb-24 xl:max-w-sm lg:w-2/5">
-        <div class="rounded overflow-hidden shadow-md bg-white">
-          <div class="absolute -mt-20 w-full flex justify-center">
-            <div class="h-32 w-32">
-              <img src="assets/mbali-profile.png" alt=""
-                   class="rounded-full object-cover h-full w-full shadow-md"/>
-            </div>
+      <div class="flex justify-start items-start">
+        <div class="relative">
+          <div class="absolute left-36 top-100 w-44 py-5 px-4 bg-gradient-to-t from-baseRed via-red50 to-red25 grid grid-cols-3 gap-8 items-center">
+            <a href="mailto:mbalenhlek.13@gmail.com">
+              <img class="cursor-pointer hover:animate-bounce transition ease-in-out delay-300" src="assets/icons/email-dark.svg" alt="'email dark'"/>
+            </a>
+            <a href="https://www.linkedin.com/in/mbalenhle-khokhoba-390761187/">
+              <img class="cursor-pointer hover:animate-bounce transition ease-in-out delay-300" src="assets/icons/linkedin-dark.svg" alt="'linkedin dark'"/>
+            </a>
+            <a href="https://www.instagram.com/imbali.entle/">
+              <img class="cursor-pointer hover:animate-bounce transition ease-in-out delay-300" src="assets/icons/instagram-dark.svg" alt="'instagram dark'"/>
+            </a>
           </div>
-          <div class="px-6 mt-16">
-            <div class="font-bold text-3xl text-center pb-1">Mbalenhle Khokhoba</div>
+          <img class="w-80" src="assets/mbali-profile.png" alt="'profile'"/>
+          <div class="bg-textPrimary text-white px-9 pt-9 pb-4">
+            <p class="text-xl font-medium">Mbalenhle Khokhoba</p>
+            <p class="text-base font-light">Director, <br> Software Engineer</p>
             <p class="text-gray-800 text-sm text-center">Director & Software Engineer</p>
             <hr class="mt-6 mb-2 h-0.5 bg-cyan-950/30">
-            <p class="text-center text-gray-600 text-base pt-3 font-normal italic">"Striving to leave a legacy and
-              inspire the next generation of leaders." </p>
-            <div class="w-full flex justify-center pt-12 pb-5">
-              <a href="mailto:mbalenhlek.13@gmail.com" class="mx-3">
-                <div>
-                  <img class="h-7 w-7" src="assets/email.svg" alt=""/>
-                </div>
-              </a>
-              <a href="https://www.linkedin.com/in/mbalenhle-khokhoba-390761187/" class="mx-3">
-                <div>
-                  <img class="h-7 w-7" src="assets/linkedin.svg" alt=""/>
-                </div>
-              </a>
-            </div>
+            <p class="text-center text-base pt-3 font-normal italic whitespace-break-spaces">"Striving to leave a legacy and
+              <br>inspire the next generation of <br> leaders." </p>
           </div>
         </div>
       </div>
     </div>
+
+    <div>
+      <div class="flex items-center justify-center mb-76">
+        <p class="text-3xl text-textPrimary font-semibold">Transporting Nationwide</p>
+      </div>
+      <div class="flex justify-center items-center h-100 bg-gradient-to-tr from-baseRed via-red50 to-baseRed relative">
+        <div class="grid grid-cols-4 gap-10 absolute -top-56">
+          <div class="h-96 w-80 bg-[url('assets/road-freight-forwarding.jpg')] bg-cover relative">
+            <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">
+              <p class="text-white text-xl font-medium font-sans">Road Freight</p>
+              <p class="text-base text-baseRed font-medium">Contract Logistics</p>
+            </div>
+          </div>
+          <div class="h-96 w-80 bg-[url('assets/logistics-consulting.jpg')] bg-cover bg-center relative">
+            <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">
+              <p class="text-white text-xl font-medium">Logistics Consulting</p>
+              <p class="text-base text-baseRed font-medium">Packaging Solutions</p>
+            </div>
+          </div>
+          <div class="h-96 w-80 bg-[url('assets/warehouse-and-distribution.jpg')] bg-cover relative">
+            <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">
+              <p class="text-white text-xl font-medium">Warehouse & Distribution</p>
+              <p class="text-base text-baseRed font-medium">Warehouse Management</p>
+            </div>
+          </div>
+          <div class="h-96 w-80 bg-[url('assets/outdoor-cleaning.jpg')] bg-cover relative">
+            <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">
+              <p class="text-white text-xl font-medium">Outdoor Cleaning</p>
+              <p class="text-base text-baseRed font-medium">Expert Services</p>
+            </div>
+          </div>
+        </div>
+          <button class="bg-baseBlue py-5 px-14 text-white hover:scale-105 duration-300  mt-16">Our Services</button>
+      </div>
+    </div>
   </div>
-</div>
+</main>
+
 
 
 

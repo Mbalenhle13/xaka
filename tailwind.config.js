@@ -4,10 +4,31 @@ module.exports = {
   theme: {
     colors: {
       baseBlue: '#091242',
+      blue75: '#09124275',
+      blue50: '#09124250',
+      blue25: '#09124225',
+      blue0: '#09124200',
+      navBlue: '#09186625',
       baseRed: '#FC3C3C',
-      baseGray: '#F4F4F4'
+      red50: '#FC3C3C50',
+      red25: '#FC3C3C25',
+      baseGray: '#F4F4F4',
+      white20pc: 'rgba(255, 255, 255, 0.20)',
+      tagGray: ' #e8e8e8',
+      tagBlue: '#04285550',
+      textSecondary: '#666C89',
+      textPrimary: '#1C1F35'
     },
     extend: {
+      margin:{
+        '88': '88px',
+        '76': '272px'
+      },
+      spacing: {
+        '50': '196px',
+        '70': '282px',
+        '100': '392px'
+      }
     },
     divideWidth: {
       DEFAULT: '1px',

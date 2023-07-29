@@ -1,28 +1,37 @@
-<!--suppress ALL-->
-<!-- Desktop Navbar -->
-<nav class="border-gray-200 px-2 mb-8 mt-8">
-<div class="grid grid-cols-3 divide-x-[3px] divide-gray-900 px-8 py-4  bg-cover">
-  <!-- Section 1: Logo and Company Name -->
-  <div class="flex col-span-1">
-    <a href="home" class="flex">
-    <img src="assets/x.svg" alt="Logo" class="h-16 w-16" />
-      <span class="self-center text-3xl text-gray-800 font-serif font-semibold whitespace-nowrap">Xaka Transport and Logistics</span>
-    </a>
-  </div>
 
-  <!-- Section 2: Menu Items -->
-  <div class="hidden col-span-1 md:flex justify-center md:order-1">
-    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium items-center">
-      <li  *ngFor="let nav of navigationUrls">
-        <a routerLink="{{nav.route}}" class="line-under text-stone-700 px-3 py-2 text-lg font-normal" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>
+<!-- Desktop Navbar -->
+<!--<nav class="bg-navBlue border-gray-200 px-2 mb-8 mt-8">-->
+<!--<div class="grid grid-cols-3 divide-x-[3px] divide-gray-900 px-8 py-4  bg-cover">-->
+
+<!--  &lt;!&ndash; Section 2: Menu Items &ndash;&gt;-->
+<!--  <div class="hidden col-span-1 md:flex justify-center md:order-1">-->
+<!--    <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium items-center">-->
+<!--      <li  *ngFor="let nav of navigationUrls">-->
+<!--        <a routerLink="{{nav.route}}" class="line-under text-stone-700 px-3 py-2 text-lg font-normal" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; Section 3: Country Name and Small Logo &ndash;&gt;-->
+<!--  <div class="hidden col-span-1 md:flex items-center justify-center md:order-3 cursor-pointer">-->
+<!--    <img class="h-6 w-6 ml-8" src="assets/x.svg"/>-->
+<!--    <a class="text-gray-800">South Africa</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</nav>-->
+
+<!--suppress ALL-->
+<div class="sticky top-0">
+<nav class="bg-navBlue grid grid-cols-2 gap-x-72 px-80 py-6 font-serif text-white">
+  <div class="flex items-center">
+    <ul class="grid grid-cols-3 divide-x-2 divide-white20pc">
+      <li  *ngFor="let nav of navigationUrls" class="px-8">
+        <a routerLink="{{nav.route}}" class="line-under px-3 py-2 text-white text-base font-normal font-semibold" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>
       </li>
     </ul>
   </div>
-
-  <!-- Section 3: Country Name and Small Logo -->
-  <div class="hidden col-span-1 md:flex items-center justify-center md:order-3 cursor-pointer">
-    <img class="h-6 w-6 ml-8" src="assets/x.svg"/>
-    <a class="text-gray-800">South Africa</a>
-  </div>
-</div>
+  <div class="flex gap-x-2 items-center justify-end"><img src="assets/icons/globe.svg"/>South Africa</div>
 </nav>
+</div>
+
+
