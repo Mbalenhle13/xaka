@@ -17,7 +17,8 @@ module.exports = {
       tagGray: ' #e8e8e8',
       tagBlue: '#04285550',
       textSecondary: '#666C89',
-      textPrimary: '#1C1F35'
+      textPrimary: '#1C1F35',
+      borderBlue: '#4E5683'
     },
     extend: {
       margin:{

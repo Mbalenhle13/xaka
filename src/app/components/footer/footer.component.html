@@ -1,66 +1,6 @@
 <!--suppress ALL-->
-<footer class="bg-white shadow mx-4 dark:bg-gray-800">
-  <section>
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Fill out our contact form to connect with our dedicated team and discover personalized solutions for your business needs.</p>
-      <form [formGroup]="contactForm" action="#" class="space-y-8">
-        <div class="flex flex-col lg:flex-row gap-4 mb-4">
-          <div class="flex-1">
-            <label for="from_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Full Name</label>
-            <input type="text" id="from_name" formControlName="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="John Doe" required>
-            <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-              This field is required.
-            </div>
-          </div>
-          <div class="flex-1">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email Address</label>
-            <input type="email" id="email" formControlName="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="email@domain.com" required>
-            <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-              This field is required.
-            </div>
-          </div>
-        </div>
-        <div>
-          <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-          <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-        </div>
-        <div class="sm:col-span-2">
-          <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-          <textarea id="message" formControlName="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a message..."></textarea>
-          <div *ngIf="contactForm.controls['message'].value.length > 300 && contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-400 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-500" role="alert">
-             Maximum 300 characters.
-          </div>
-          <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-            This field is required.
-          </div>
-        </div>
-        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-gray-900 rounded-lg bg-slate-100 sm:w-fit transition ease-in-out delay-150 hover:bg-slate-200 hover:-translate-y-1 hover:scale-105 duration-300" (click)="sendEmail()">Send message</button>
-      </form>
-    </div>
-  </section>
-  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="/home" class="hover:underline">Xaka Transport and Logistics™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm  font-normal text-gray-500 dark:text-gray-400 sm:mt-0">
-      <li>
-        <a href="" class="mr-4 hover:underline md:mr-6">Home</a>
-      </li>
-      <li>
-        <a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a>
-      </li>
-      <li>
-        <a href="/services" class="mr-4 hover:underline md:mr-6">Services</a>
-      </li>
-      <li>
-        <a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>
-      </li>
-    </ul>
-  </div>
-</footer>
-
-<footer class="bg-baseBlue px-80 py-36 grid grid-rows-2 font-sans text-white">
-  <div class="grid grid-cols-2 gap-20">
+<footer class="bg-baseBlue px-80 pt-24 grid grid-flow-row font-sans text-white">
+  <div class="grid grid-cols-2 gap-20 mb-16">
     <div>
           <div class="bg-white/10 w-fit px-2.5 py-1 border-l-baseRed border-l-4 font-normal text-sm mb-4">Contact
           </div>
@@ -83,45 +23,82 @@
         <div class="flex flex-col lg:flex-row gap-7 mb-4">
           <div class="flex-1">
             <label for="from_name" class="block mb-2 text-l font-normal text-white">Full Name*</label>
-            <input type="text" id="from_name" formControlName="name" class="bg-baseBlue border-2 text-white text-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="John Doe" required>
-            <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            <input type="text" id="from_name" formControlName="name" class="bg-baseBlue border-borderBlue border-2 text-white text-lg block w-full p-2.5 dark:placeholder-gray-400" placeholder="John Doe" required>
+            <div *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)" class="pt-2 mb-4 text-sm text-red-400" role="alert">
               This field is required.
             </div>
           </div>
           <div class="flex-1">
             <label for="email" class="block mb-2 text-l font-normal text-white">Email Address*</label>
-            <input type="email" id="email" formControlName="email" class="bg-baseBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="email@domain.com" required>
-            <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+            <input type="email" id="email" formControlName="email" class="bg-baseBlue border-borderBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="email@domain.com" required>
+            <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)" class="pt-2 mb-4 text-sm text-red-400" role="alert">
               This field is required.
             </div>
           </div>
         </div>
         <div class="flex flex-col lg:flex-row gap-7 mb-4">
           <div class="flex-1">
-          <label for="number" class="block mb-2 text-l font-normal text-white">Phone Number*</label>
-          <input type="text" id="number" class="bg-baseBlue border-2 text-white text-xl block w-full p-2.5 dark:placeholder-gray-40" placeholder="Let us know how we can help you" required>
+          <label for="phone" class="block mb-2 text-l font-normal text-white">Phone Number*</label>
+          <input (keypress)="numberOnly($event)" type="text" id="phone" class="bg-baseBlue border-borderBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="072 918 1895" required>
+            <div *ngIf="contactForm.controls['phone'].invalid && (contactForm.controls['phone'].dirty || contactForm.controls['phone'].touched)" class="pt-2 mb-4 text-sm text-red-400" role="alert">
+              This field is required.
+            </div>
+            <div *ngIf="contactForm.controls['phone'].value.length !== 10 && (contactForm.controls['phone'].dirty || contactForm.controls['phone'].touched)" class="pt-2 mb-4 text-sm text-red-400" role="alert">
+              Maximum 10 digits.
+            </div>
         </div>
           <div class="flex-1">
           <label for="subject" class="block mb-2 text-l font-normal text-white">Subject</label>
-          <input type="text" id="subject" class="bg-baseBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="Let us know how we can help you" required>
+          <input type="text" id="subject" class="bg-baseBlue border-borderBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="Let us know how we can help you" required>
         </div>
         </div>
         <div class="sm:col-span-2 mb-16">
           <label for="message" class="block mb-2 text-l font-normal text-white">Your message*</label>
-          <textarea id="message" formControlName="message" rows="6" class="bg-baseBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="Leave a message..."></textarea>
-          <div *ngIf="contactForm.controls['message'].value.length > 300 && contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-400 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-500" role="alert">
+          <textarea id="message" formControlName="message" rows="6" class="bg-baseBlue border-borderBlue border-2 text-white text-l block w-full p-2.5 dark:placeholder-gray-40" placeholder="Leave a message..."></textarea>
+          <div *ngIf="contactForm.controls['message'].value.length > 300 && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="pt-2 mb-4 text-sm text-red-400" role="alert">
             Maximum 300 characters.
           </div>
-          <div *ngIf="contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+          <div *ngIf="contactForm.controls['message'].value.length <= 300 && contactForm.controls['message'].invalid && (contactForm.controls['message'].dirty || contactForm.controls['message'].touched)" class="pt-2 mb-4 text-sm text-red-400" role="alert">
             This field is required.
           </div>
         </div>
-        <app-button class="mt-8" [label]="'Submit Messsage'" (click)="sendEmail()"></app-button>
-<!--        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-gray-900 rounded-lg bg-slate-100 sm:w-fit transition ease-in-out delay-150 hover:bg-slate-200 hover:-translate-y-1 hover:scale-105 duration-300" (click)="sendEmail()">Send message</button>-->
+        <div class="mt-8">
+        <app-button class="mb-8" [label]="'Submit Messsage'" (click)="sendEmail()"></app-button>
+        </div>
       </form>
     </div>
   </div>
-  <div class="bg-purple-300">
-    Placeholder for brands
+  <div class="flex justify-between">
+    <div class="relative bg-[url('assets/l7-background.jpg')] bg-cover w-72 h-56">
+      <div class="w-full h-full bg-white20pc px-8">
+        <img class="absolute top-20 left-0" src="assets/L7-logo.png"/>
+      </div>
+    </div>
+    <div class="relative bg-[url('assets/grain-carriers-background.jpg')] bg-cover w-72 h-56">
+      <div class="w-full h-full bg-white20pc px-8">
+        <img class="absolute top-20 left-0" src="assets/grain-carriers-logo.png"/>
+      </div>
+    </div>
+    <div class="relative bg-[url('assets/medicos-background.jpg')] bg-cover w-72 h-56">
+      <div class="w-full h-full bg-white20pc px-8">
+        <img class="absolute top-24 left-8" src="assets/medicos-logo.svg"/>
+      </div>
+    </div>
+  </div>
+  <hr class="mt-2.5">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between font-serif h-20">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © 2023 - <a href="/home" class="hover:underline">Xaka Transport and Logistics™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm  font-normal text-gray-500 dark:text-gray-400 sm:mt-0">
+      <li>
+        <a href="" class="mr-4 hover:underline md:mr-6">Home</a>
+      </li>
+      <li>
+        <a href="/services" class="mr-4 hover:underline md:mr-6">Services</a>
+      </li>
+      <li>
+        <a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>
+      </li>
+    </ul>
   </div>
 </footer>
