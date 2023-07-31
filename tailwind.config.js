@@ -23,6 +23,7 @@ module.exports = {
     extend: {
       margin:{
         '88': '88px',
+        '22': '82px',
         '76': '272px'
       },
       spacing: {

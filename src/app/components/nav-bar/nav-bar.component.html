@@ -2,7 +2,7 @@
 <div class="relative top-0">
 <nav class="bg-navBlue grid grid-cols-2 gap-x-72 px-80 py-6 font-serif text-white">
   <div class="flex items-center">
-    <ul class="grid grid-cols-3 divide-x-2 divide-white20pc">
+    <ul class="absolute grid grid-cols-3 divide-x-2 divide-white20pc z-10">
       <li  *ngFor="let nav of navigationUrls" class="px-8">
         <a routerLink="{{nav.route}}" class="line-under px-3 py-2 text-white text-base font-normal font-semibold" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>
       </li>
