@@ -1,15 +1,42 @@
 <!--suppress ALL-->
+<!--<div class="relative top-0 tablet:hidden">-->
+<!--<nav class="bg-navBlue grid grid-cols-2 gap-x-72 px-80 py-6 font-serif text-white">-->
+<!--  <div class="flex items-center">-->
+<!--    <ul class="absolute grid grid-cols-3 divide-x-2 divide-white20pc z-10">-->
+<!--      <li  *ngFor="let nav of navigationUrls" class="px-8">-->
+<!--        <a routerLink="{{nav.route}}" class="line-under px-3 py-2 text-white text-base font-normal font-semibold" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </div>-->
+<!--  <div class="flex gap-x-2 items-center justify-end"><img src="assets/icons/globe.svg"/>South Africa</div>-->
+<!--</nav>-->
+<!--</div>-->
+
 <div class="relative top-0">
-<nav class="bg-navBlue grid grid-cols-2 gap-x-72 px-80 py-6 font-serif text-white">
-  <div class="flex items-center">
-    <ul class="absolute grid grid-cols-3 divide-x-2 divide-white20pc z-10">
-      <li  *ngFor="let nav of navigationUrls" class="px-8">
-        <a routerLink="{{nav.route}}" class="line-under px-3 py-2 text-white text-base font-normal font-semibold" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>
-      </li>
-    </ul>
+<nav class="bg-baseBlue md:bg-navBlue">
+  <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 font-serif">
+    <a href="https://xakatransport.co.za" class="flex items-center">
+      <img class="w-8 h-8 mr-3" src="assets/logo/xaka-company-logo.svg" alt="company_logo"/>
+      <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Xaka Transport And Logistics</span>
+    </a>
+
+    <button (click)="toggleNavbar()" data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden" aria-controls="mega-menu-full" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+    <div [ngClass]="{'hidden': !openMobileMenu, 'block': openMobileMenu}" id="mega-menu-full" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+      <ul class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+        <li  *ngFor="let nav of navigationUrls">
+          <a routerLink="{{nav.route}}" class="block py-2 pl-3 pr-4 text-white line-under md:p-4" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="flex gap-x-2 items-center justify-end"><img src="assets/icons/globe.svg"/>South Africa</div>
 </nav>
 </div>
+
+
 
 

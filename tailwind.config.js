@@ -21,10 +21,26 @@ module.exports = {
       borderBlue: '#4E5683'
     },
     extend: {
+      screens: {
+        '2xl': {'max': '1535px'},
+        // => @media (max-width: 1535px) { ... }
+
+        'xl': {'max': '1279px'},
+        // => @media (max-width: 1279px) { ... }
+
+        'lg': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
+
+        'tablet': {'max': '767px'},
+        // => @media (max-width: 767px) { ... }
+
+        'phone': {'max': '639px'},
+        // => @media (max-width: 639px) { ... }
+      },
       margin:{
         '88': '88px',
-        '22': '82px',
-        '76': '272px'
+        '22': '88px',
+        '76': '272px',
       },
       spacing: {
         '50': '196px',

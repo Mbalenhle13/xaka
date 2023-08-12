@@ -14,6 +14,7 @@ navigationUrls = [
   { title: 'Blog', route: 'blog' },
 ]
   currentRoute: string | undefined;
+  openMobileMenu: boolean = false;
   constructor(private router: Router, private activatedRoute: ActivatedRoute) {
   }
 
@@ -22,5 +23,8 @@ navigationUrls = [
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(() => {
       this.currentRoute = this.activatedRoute?.root?.firstChild?.snapshot?.routeConfig?.path;
     });
+  }
+  toggleNavbar(){
+    this.openMobileMenu = !this.openMobileMenu;
   }
 }
