@@ -1,31 +1,31 @@
-<section class="top-0 md:-mt-88 tablet:hidden">
-  <div>
+<section class="relative top-0 -mt-0  md:-mt-[88px] md:static">
     <img class="w-full" src='assets/home-red-truck.png' alt="'truck'"/>
-    <div class="absolute top-96 left-40 px-4 py-3 w-3/5 font-sans text-white">
+    <div class="absolute top-8 md:top-64  left-10 lg:left-20 px-1 lg:px-4 py-3 w-4/5 md:w-5/6 2xl:w-3/5 font-sans text-white">
       <div class="bg-tagBlue w-fit px-2.5 py-1 border-l-baseRed border-l-4 font-normal text-sm mb-4">Logistics & Supply
         Chain Solutions
       </div>
-      <h2 class="font-bold text-6xl leading-tight">Discover limitless possibilities to any destination in the
+      <h2 class="text-xl font-bold sm:text-2xl xl:text-4xl leading-tight">Discover limitless possibilities to any destination in the
         World.</h2>
-      <p class="mt-6 text-base font-medium">Your premium destination for comprehensive transportation and
+
+      <p class="hidden mt-6 text-xs xl:text-sm font-medium sm:mb-4 sm:block">Your premium destination for comprehensive transportation and
         logistics solutions. With an unwavering commitment to customer satisfaction and operational efficiency, we are
         dedicated to providing you with top-notch service and optimal outcomes. </p>
-      <p class="mt-6 text-base font-medium">Our seasoned team of experts is ready to deliver the highest
+
+      <p class="hidden mt-6 text-xs xl:text-sm font-medium lg:block">Our seasoned team of experts is ready to deliver the highest
         quality of service and tailor-made solutions to
         meet all your transportation and logistics needs. We specialize in a wide range of services, including
         transportation, construction, and outdoor cleaning. </p>
 
-      <p class="mt-6 text-base font-medium mb-6">Stay informed and connected with our daily news blog, "The 24/7hr
+      <p class="hidden mt-6 text-xs xl:text-sm font-medium mb-6 lg:block">Stay informed and connected with our daily news blog, "The 24/7hr
         Daily Beam IT Up News," exclusively
         available on our website. This unique platform offers a diverse range of perspectives from across the Transport
         & Logistics industry. Prepare to be captivated as we bring you the latest insights, trends, and innovations that
         shape our dynamic field. This is an opportunity you won't want to miss!</p>
-      <app-button [label]="'Explore More'"  (click)="router.navigate(['/services'])"></app-button>
+      <app-button class="hidden sm:block" [label]="'Explore More'"  (click)="router.navigate(['/services'])"></app-button>
     </div>
-  </div>
 </section>
 
-<main class="font-sans tablet:hidden">
+<main class="font-sans">
   <div class="flex justify-center mb-4">
     <p class="w-fit bg-tagGray  px-2.5 py-1 border-l-baseRed border-l-4 font-normal text-sm mb-4 mt-32">The transporters</p>
   </div>
