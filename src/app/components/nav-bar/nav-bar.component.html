@@ -1,23 +1,10 @@
 <!--suppress ALL-->
-<!--<div class="relative top-0 tablet:hidden">-->
-<!--<nav class="bg-navBlue grid grid-cols-2 gap-x-72 px-80 py-6 font-serif text-white">-->
-<!--  <div class="flex items-center">-->
-<!--    <ul class="absolute grid grid-cols-3 divide-x-2 divide-white20pc z-10">-->
-<!--      <li  *ngFor="let nav of navigationUrls" class="px-8">-->
-<!--        <a routerLink="{{nav.route}}" class="line-under px-3 py-2 text-white text-base font-normal font-semibold" [ngClass]="{ 'active': nav.route === currentRoute }">{{nav.title}}</a>-->
-<!--      </li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--  <div class="flex gap-x-2 items-center justify-end"><img src="assets/icons/globe.svg"/>South Africa</div>-->
-<!--</nav>-->
-<!--</div>-->
-
 <div class="relative top-0">
 <nav class="bg-baseBlue md:bg-navBlue">
   <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4 font-serif">
     <a href="https://xakatransport.co.za" class="flex items-center">
       <img class="w-8 h-8 mr-3" src="assets/logo/xaka-company-logo.svg" alt="company_logo"/>
-      <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Xaka Transport And Logistics</span>
+      <span class="self-center text-base lg:text-2xl font-semibold whitespace-nowrap text-white">Xaka Transport And Logistics</span>
     </a>
 
     <button (click)="toggleNavbar()" data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden" aria-controls="mega-menu-full" aria-expanded="false">
