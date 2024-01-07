@@ -45,7 +45,7 @@ module.exports = {
       spacing: {
         '50': '196px',
         '70': '282px',
-        '100': '392px'
+        '100': '600px'
       }
     },
     divideWidth: {
