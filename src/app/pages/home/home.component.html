@@ -1,27 +1,27 @@
-<section class="relative top-0 -mt-0  md:-mt-[88px] md:static">
+<section class="relative top-0 -mt-0  md:-mt-[88px] md:staticnpm start">
     <img class="w-full bg-fixed" src='assets/home-red-truck.png' alt="'truck'" loading="eager" />
     <div class="absolute top-8 md:top-20 lg:top-28 xl:top-44 left-10 lg:left-20 px-1 lg:px-4 py-3 w-4/5 md:w-5/6 2xl:w-3/5 font-sans text-white">
       <div class="bg-tagBlue w-fit px-2.5 py-1 border-l-baseRed border-l-4 font-normal text-sm mb-4">Logistics & Supply
         Chain Solutions
       </div>
-      <h2 class="text-xl font-bold sm:text-2xl xl:text-4xl leading-tight">Discover limitless possibilities to any destination in the
+      <h2 class="text-xl font-bold sm:text-2xl xl:text-4xl leading-tight animate__animated animate__zoomIn">Discover limitless possibilities to any destination in the
         World.</h2>
 
-      <p class="hidden mt-6 text-xs xl:text-sm font-medium sm:mb-4 sm:block">Your premium destination for comprehensive transportation and
+      <p class="hidden mt-6 text-xs xl:text-sm font-medium sm:mb-4 sm:block animate__animated animate__backInLeft">Your premium destination for comprehensive transportation and
         logistics solutions. With an unwavering commitment to customer satisfaction and operational efficiency, we are
         dedicated to providing you with top-notch service and optimal outcomes. </p>
 
-      <p class="hidden mt-6 text-xs xl:text-sm font-medium lg:block">Our seasoned team of experts is ready to deliver the highest
+      <p class="hidden mt-6 text-xs xl:text-sm font-medium lg:block animate__animated animate__backInLeft">Our seasoned team of experts is ready to deliver the highest
         quality of service and tailor-made solutions to
         meet all your transportation and logistics needs. We specialize in a wide range of services, including
         transportation, construction, and outdoor cleaning. </p>
 
-      <p class="hidden mt-6 text-xs xl:text-sm font-medium mb-6 lg:block">Stay informed and connected with our daily news blog, "The 24/7hr
+      <p class="hidden mt-6 text-xs xl:text-sm font-medium mb-6 lg:block animate__animated animate__backInLeft">Stay informed and connected with our daily news blog, "The 24/7hr
         Daily Beam IT Up News," exclusively
         available on our website. This unique platform offers a diverse range of perspectives from across the Transport
         & Logistics industry. Prepare to be captivated as we bring you the latest insights, trends, and innovations that
         shape our dynamic field. This is an opportunity you won't want to miss!</p>
-      <app-button class="hidden sm:block" [label]="'Explore More'"  (click)="router.navigate(['/services'])"></app-button>
+      <app-button class="hidden sm:block animate__animated animate__slideInLeft" [label]="'Explore More'"  (click)="router.navigate(['/services'])"></app-button>
     </div>
 </section>
 
@@ -78,30 +78,24 @@
 
       <div class="flex justify-center items-center h-100 bg-transparent bg-gradient-to-tr from-baseRed via-red50 to-baseRed relative">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 md:grid-cols-3 md:gap-4 lg:gap-6 absolute md:-top-40 lg:-top-56">
-          <div class="h-64 w-60 md:h-64 md:w-60 lg:h-96 lg:w-80 bg-[url('assets/road-freight-forwarding.jpg')] bg-cover relative">
+          <div class="h-64 w-60 md:h-64 md:w-60 lg:h-96 lg:w-80 bg-[url('assets/road-freight-forwarding.jpg')] bg-cover relative animate__animated animate__fadeInDown">
             <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">
               <p class="text-sm text-white lg:text-xl font-medium">Transport and Logistics Distribution</p>
               <p class="text-xs lg:text-base text-baseRed font-medium">Contract Logistics</p>
             </div>
           </div>
-          <div class="h-64 w-60 md:h-64 md:w-60 lg:h-96 lg:w-80 bg-[url('assets/tractor.png')] bg-cover bg-center relative">
+          <div class="h-64 w-60 md:h-64 md:w-60 lg:h-96 lg:w-80 bg-[url('assets/tractor.png')] bg-cover bg-center relative animate__animated animate__fadeInUp">
             <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">
               <p class="text-sm text-white lg:text-xl font-medium">Outdoor Cleaning</p>
               <p class="text-xs lg:text-base text-baseRed font-medium">Expert Services</p>
             </div>
           </div>
-          <div class="h-64 w-60 md:h-64 md:w-60 lg:h-96 lg:w-80 bg-[url('assets/itc-solutions.jpg')] bg-cover relative">
+          <div class="h-64 w-60 md:h-64 md:w-60 lg:h-96 lg:w-80 bg-[url('assets/itc-solutions.jpg')] bg-cover relative animate__animated animate__fadeInDown">
             <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">
               <p class="text-sm text-white lg:text-xl font-medium">ITC Solutions</p>
               <p class="text-xs lg:text-base text-baseRed font-medium">Tailored Solutions</p>
             </div>
           </div>
-<!--          <div class="h-48 w-36 lg:h-72 lg:w-56 xl:h-96 xl:w-80 bg-[url('assets/outdoor-cleaning.jpg')] bg-cover relative">-->
-<!--            <div class="absolute bottom-0 w-full bg-gradient-to-t from-baseBlue via-blue75 to-blue0 px-6 py-5">-->
-<!--              <p class="text-sm text-white lg:text-xl font-medium">Outdoor Cleaning</p>-->
-<!--              <p class="text-xs lg:text-base text-baseRed font-medium">Expert Services</p>-->
-<!--            </div>-->
-<!--          </div>-->
         </div>
           <button class="bg-baseBlue py-5 px-14 text-white hover:scale-105 duration-300 mt-80  md:mt-20" (click)="router.navigate(['/services'])">Our Services</button>
       </div>
