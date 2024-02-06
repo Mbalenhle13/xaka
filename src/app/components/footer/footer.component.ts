@@ -51,7 +51,7 @@ export class FooterComponent implements OnInit {
     if(this.contactForm.controls['email'].valid && this.contactForm.controls['name'].valid &&
       this.contactForm.controls['message'].valid && this.contactForm.controls['phone'].valid &&
       this.contactForm.controls['subject'].valid) {
-      emailjs.send('service_jyjgvlr', 'template_alsvk0k', templateParams, 'WU-amvWNJFrgfKIka')
+      emailjs.send('service_hc4n5b8', 'template_alsvk0k', templateParams, 'WU-amvWNJFrgfKIka')
         .then(() => {
         this.showFailureToast = false;
         this.showSuccessToast = true;
