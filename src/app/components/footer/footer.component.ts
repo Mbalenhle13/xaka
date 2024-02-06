@@ -48,9 +48,7 @@ export class FooterComponent implements OnInit {
       phone: this.contactForm.controls['phone'].value,
       subject: this.contactForm.controls['subject'].value
     }
-    if(this.contactForm.controls['email'].valid && this.contactForm.controls['name'].valid &&
-      this.contactForm.controls['message'].valid && this.contactForm.controls['phone'].valid &&
-      this.contactForm.controls['subject'].valid) {
+    if(this.contactForm.valid) {
       emailjs.send('service_hc4n5b8', 'template_alsvk0k', templateParams, 'WU-amvWNJFrgfKIka')
         .then(() => {
         this.showFailureToast = false;
